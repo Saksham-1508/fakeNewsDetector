@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0 10%;
+    margin-bottom: 0;
+    font-family: 'Nunito', sans-serif;
+    background: rgb(33, 37, 41);
+    color: rgb(248, 249, 250);
+}
+
+.field {
+    width: 40%;
+    margin: 0 30%;
+    background: rgb(52, 58, 64);
+    color: white;
+}
+
+#predict_btn {
+    font-size: 22px;
+    padding: 15px;
+    /* width: 12%; */
+    letter-spacing: 0.07em;
+    font-family: 'Nunito', sans-serif;
+}
+
+.result-success h1{ color:greenyellow;}
+.flex-content {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.label {
+    font-size: 27px;
+}
+
+.field {
+    padding: 4px 5px;
+}
+
+h1 {
+    font-weight: bold;
+    word-spacing: 0.1em;
+}
+
+.news {
+    background: rgb(52, 58, 64);
+    width: 100%;
+    height: 42vh;
+    display: flex;
+    /* margin: 0 10px; */
+    position: relative;
+    padding: 0.5em;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin: 20px 0;
+    color: rgb(248, 249, 250);
+    overflow: hidden;
+}
+
+.news img {
+    width: 30%;
+    margin: 1%;
+    border-radius: 5px;
+}
+
+.news-feed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.news a {
+    text-decoration: none;
+    color: #809eff;
+    font-weight: 400;
+    font-size: 20px;
+    padding-left: 10px;
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+}
+
+.news p {
+    font-size: 18px;
+    padding-left: 8px;
+    padding-top: 20px;
+    width: 90%;
+}
+
+.news h1 {
+    /* margin-top:0;
+    padding: 0; */
+    font-size: 24px;
+    padding-left: 10px;
+    padding-top: 16px;
+}
+
+.article-link:hover {
+    font-weight: bold;
+    color: #9bb3ff;
+}
+
+@media only screen and (max-width:800px) {
+    body {
+        margin: 0;
+    }
+    .field {
+        width: 80%;
+        margin: 0 10%;
+    }
+    #predict_button {
+        font-size: 16px;
+    }
+    .news {
+        width: 90%;
+        margin: 3% 5%;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        height: auto;
+    }
+    .news h1 {
+        font-size: 18px;
+    }
+    .news img {
+        width: 90%;
+        margin: 1% 5%;
+        border-radius: none;
+    }
+    .news p {
+        display: none;
+    }
+    .news a {
+        position: static;
+    }
+}
