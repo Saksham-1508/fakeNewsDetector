@@ -18,8 +18,8 @@
             <div class="d-flex flex-column mb-3 justify-content-center">
                 <label class="label my-3">Paste the news headline here</label>
                 <textarea name="desc" class="field" cols="20" rows="5" placeholder="Enter the news description here.."></textarea>
-                <label class="label my-3">Enter url</label>
-                <input name="url" type="url" name="url" id="url" class="field py-2" placeholder="Enter the url to be validated.." pattern="https://.*" size="30">
+                <label class="label my-3">Paste image url</label>
+                <input name="url" type="url" name="url" id="url" class="field py-2" placeholder="Enter link to the image" pattern="https://.*" size="30">
 
                 <div class="flex-content my-5">
                     <button type="submit" id="predict_btn" class="btn btn-primary">PREDICT</button>
@@ -27,7 +27,7 @@
 
             </div>
         </form>
-        <div class="result">
+        <div class="result container" style="text-align: center;">
             {% if messages %}
             <ul class="messages">
                 {% for message in messages %}
@@ -36,6 +36,7 @@
                     </p>
                     {% endfor %}
             </ul>
+            <a href="{{link}}" style="text-decoration:none;color:#809eff;text-align: center;font-size: 16px;">Read Here</a>
             {% endif %}
         </div>
     </div>
