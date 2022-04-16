@@ -89,7 +89,7 @@ def index (request):
                 return render(request,'index.html',{"link":link})
             else:
                 messages.info(request, 'Fake News')
-                return render(request,'index.html')
+                return render(request,'index.html',{"link":link})
         else:
             result = getPredictions(description,url)
             if result == True:
